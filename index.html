@@ -1,0 +1,419 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M International - Клеточное питание и бизнес</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+    <style>
+        /* Дополнительные стили для кнопки "Стать партнером" */
+        .partner-button-container {
+            margin-top: 80px !important;
+            padding-top: 40px;
+        }
+        
+        .partner-button-custom {
+            margin-top: 60px !important;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Навигация -->
+    <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex flex-col items-center">
+            <h1 class="text-2xl font-bold mb-4">M International</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:underline">Главная</a></li>
+                <li><a href="#history" class="hover:underline">Наша история</a></li>
+                <li><a href="#products" class="hover:underline">Продукты</a></li>
+                <li><a href="#business" class="hover:underline">Бизнес</a></li>
+                <li><a href="#about" class="hover:underline">О компании</a></li>
+                <li><a href="#reviews" class="hover:underline">Отзывы</a></li>
+                <li><a href="#contact" class="hover:underline">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="bg-cover bg-center h-screen text-black" style="background-image: url('https://gateway.pinata.cloud/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco')">
+        <div class="container mx-auto text-center pt-40">
+            <h2 class="text-4xl font-bold mb-4">M International: Инновации для здоровья</h2>
+            <p class="text-xl mb-6">
+                это компания, занимающаяся естественным здоровьем и благополучием, которая разрабатывает и
+                продает продукты для здоровья, красоты и личной гигиены.
+                Основанная в 2019 году в Малайзии в г. Куала-Лумпур, компания M International
+                успешно заручилась поддержкой лидеров из Монголии, Сингапура, Казахстана,
+                России, Китая, Малайзии и Вьетнама. Мы стремимся создавать высококачественные
+                продукты для «ВОССТАНОВЛЕНИЯ» здоровья, и ЗДЕСЬ мы продвигаем легкую
+                платформу для создания благосостояния и качества жизни.
+                Собственные заводы, научные базы в Швейцарии и Италии, 8 международных сертификатов!
+            </p>
+            <button onclick="connectWallet()" class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-600">Подключить кошелек Polygon</button>
+        </div>
+    </section>
+
+    <!-- Наша история -->
+    <section id="history" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Наша история</h2>
+            <p class="text-xl mb-6">В апреле 2024 года в офис моей жены Бакыт пришла молодая девушка Сафийя, которая рассказала про компанию M International продала штучно пару-тройку саше GreenMAX и пакетик чая Relax. Жена не долго думая пропила как положено на ночь GreenMAX и совместно всей семьей пакетик чая Relax… В ту ночь мы спали как младенцы, утром проснулись бодрыми и хорошо выспавшимися, а вот про результат с GreenMAX жена поделилась позже. Подробности опущу, скажу только одно, что пошли в эту компанию на продукт, так как я сам впоследствии попробовал это клеточное питание и в восторге от него. Позже мы ознакомились с маркетинг-планом M International, который был очень щедрым, как раз в тот момент проходил промоушн, когда заходишь на пакет Gold, то автоматически переходишь на бизнес-пакет Mobile. Недавно мы не особо напрягаясь закрыли статус «Сапфир», заработав в общей сложности – 2 262 700 тенге. Для нас это - клеточное питание, а также возможность получать большие чеки, для кого-то это возможность заработать и возможность приобрести «Продукт последней надежды», следуя рекомендациям наших вышестоящих менторов – мы не лечим, мы зовем Вас в бизнес! Приходите к нам команду! Мы научим Вас работать в соцсетях, проведем топовые занятия по саморазвитию, раскроем секреты развития собственного потенциала! Мы послужим Вам мостом к Вашим мечтам!</p>
+            
+            <h2 class="text-3xl font-bold text-center mb-8">Наша команда</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreiaakf77o4pjrbk54m4ldrypyb6qscg4za34li242xudir6jud2ify" alt="Бакыт" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Бакыт</h3>
+                    <p>сапфировый лидер команды</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreidaiv4ljcddgvvboo4st7e3nciuehjsewxk4pooroh6cyqvr4wv3u" alt="Семейная пара Бакыт и Ертай" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Семейная пара</h3>
+                    <p>Однозвездочные менеджеры компании (статус: Сапфир).</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreigu5kwxkuwj2ihxecbnokigywedmlqseb4bvtjn6ebmwpkbatqt4a" alt="Ертай" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Ертай</h3>
+                    <p>сапфировый лидер команды</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Продукты -->
+    <section id="products" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Наши продукты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- MiMAX -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreigmdfob4dlt3js3ec7lfx7day2qjzvr7pz4fbsldfjbf7tfinbqgy" alt="MiMAX" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">MiMAX</h3>
+                    <p>Растительный комплекс с антиоксидантами: астаксантин, облепиха, экстракт сосны, черника, полифенолы яблока (Швейцария), ресвератрол. Замедляет старение, защищает клетки от свободных радикалов, укрепляет сердце, улучшает зрение, повышает уровень энергии, нормализует метаболизм и уровень сахара в крови, улучшает состояние кожи, устраняет усталость глаз.</p>
+                </div>
+                <!-- BluMAX -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreiaqtnp3lyoqr2tqrlosliuqsj6urxnri2i7w7bnhf4rtryudqgz6u" alt="BluMAX" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">BluMAX</h3>
+                    <p>Сине-зеленые водоросли AFA, грибы agaricus, порошок агавы, витамин С. Укрепляет иммунитет, снижает риск сердечных заболеваний, уменьшает боль в суставах, улучшает здоровье дыхательных путей, нормализует гемоглобин, помогает справиться со стрессом, поддерживает ясность ума, способствует омоложению.</p>
+                </div>
+                <!-- NutriMAX -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreick2sdhjnrjcnw55cs6srq5x5jaqu5amxbvtekav6pvdheicdgdfq" alt="NutriMAX" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">NutriMAX</h3>
+                    <p>Растительный белок (соя, зеленая фасоль), экстракты ячменя, пшеницы, спирулины, хлореллы, моринги, люцерны, фруктоолигосахариды, кальций морских водорослей, стевия. Способствует похудению или набору мышечной массы, укрепляет кости, снижает холестерин, улучшает работу сердца и поджелудочной железы, нормализует давление.</p>
+                </div>
+                <!-- L'AMOR -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreibjqk6ouzbjyygkj5xob3apjltz4sr42kgxmxy7dw2zyxoefgb65a" alt="L'AMOR" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">L'AMOR (Маска и Скраб)</h3>
+                    <p>Натуральная маска с овсянкой, соей, алоэ, маслами мяты и жасмина. Омолаживает, отбеливает, успокаивает кожу, подходит для всех типов.</p>
+                </div>
+                <!-- Fleximax -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreihpcgl3ruwi7t7nudivqh2uirdubtmiw2zjas6em7gbn46c3kezma" alt="Fleximax" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Fleximax</h3>
+                    <p>Напиток с куркумой, экстрактом апельсина, кукурузой, морским салатом, гиалуроновой кислотой, витамином D. Укрепляет суставы и кости, снимает воспаление, облегчает боль, поддерживает здоровье кишечника, снижает риск рака, улучшает работу печени, замедляет старение.</p>
+                </div>
+                <!-- Ye-Katerina -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreiazhqhtukjpq2ylxhbrlkxvk76xounmljph3vbxyfiwtfhky5pr3u" alt="Ye-Katerina" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Ye-Katerina</h3>
+                    <p>Гель для женской гигиены с экстрактами трав (дубовые галлы, пипер бетель, чеснок, лаванда). Регулирует менструальный цикл, устраняет сухость, зуд, запахи, тонизирует влагалище, повышает сексуальность, облегчает менопаузу, помогает при цистите, геморрое, миомах, кистах.</p>
+                </div>
+                <!-- GreenMAX -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreidz5bzb3tcsxn36pworb2gipnvoeeodwhc67c3en34fcyppeh5uoi" alt="GreenMAX" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">GreenMAX</h3>
+                    <p>Напиток с растительной клетчаткой (корень лопуха, шлинат, тыква, фиолетовый батат, морковь), хлорофиллом, пробиотиками, расторопшей, клетчаткой киви, яблоком, семенами подорожника, Kionutrime-Cs, периллой, моросилом, витамином С. Очищает кишечник, выводит токсины, поддерживает иммунитет, снижает вес, защищает печень.</p>
+                </div>
+                <!-- MiCrystal -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreiensilacpet5mwfxg45ur4qhqk2ukbphkbzxqbrnldh5xa4kaln3y" alt="MiCrystal" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">MiCrystal</h3>
+                    <p>Инновационный продукт для здоровья глаз. Содержит лютеин, астаксантин, витамины А, С, Е и цинк. Улучшает зрение, снимает усталость, снижает риск катаракты и глаукомы. Удобная форма капсул.</p>
+                </div>
+                <!-- KordyMAX -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreiemfsgsqfas4ze7f62rgkfscolohknf5k6jrlrtiwwhccojqydjnu" alt="KordyMAX" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">KordyMAX</h3>
+                    <p>Эликсир с кордицепсом, красным виноградом, алоэ вера, черникой, вишней, полисахаридами, аминокислотами. Обладает противоопухолевым действием, регулирует липиды в крови, восстанавливает функции почек, печени, сердца, повышает иммунитет, борется с хронической усталостью.</p>
+                </div>
+                <!-- MachoMAN -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreia5ganmig32f2flh2ubb5wjhp5kbrufhvglmle3iykp5yrhfx2eoe" alt="MachoMAN" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">MachoMAN</h3>
+                    <p>Мощная формула с L-Аргинином, экстрактом дамианы, перуанской маки, женьшенем Panax и грейпфрутовым порошком. 100% натуральный состав. Улучшает кровообращение, повышает тестостерон, усиливает либидо, защищает от стресса. Принимать 1-2 саше в день, курс — 3 месяца.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- О компании -->
+    <section id="about" class="py-12 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">О компании</h2>
+            <p class="text-center mb-6">M International была основана в феврале 2019 года командой профессионалов, стремящихся улучшить здоровье и благополучие людей по всему миру.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreiflusxtlgxpi5ct7ctiif557pypoep6cgamsv44qrha75lf5vkyq4" alt="Головной офис в Куала-Лумпуре" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Головной офис</h3>
+                    <p>Наш головной офис расположен в Куала-Лумпуре, Малайзия — сердце Юго-Восточной Азии.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreife6wcfyagzdiaq3nq4oc6lqx3sqh6da2myhzh22wykkc36a745ee" alt="Основатели M International" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Основатели</h3>
+                    <p>Команда основателей M International объединяет опыт и инновации для создания глобального успеха.</p>
+                    <ul>
+                        <li><strong>Барбара Кабуки</strong> - Президент «M International», уроженка Японии, бизнес-вумен, владелица 65% всех LUX Отелей в Японии, миллиардер.</li>
+                        <li><strong>Мистер Ли</strong> - Сооснователь «M International», уроженец Малайзии, бизнесмен, эксперт по блокчейну и криптовалютам, миллиардер.</li>
+                        <li><strong>Эстер Вонг</strong> - Уроженка Малайзии, более 10 лет в управлении компанией Amway.</li>
+                        <li><strong>Мачо Янг (Энххишиг Баярболд)</strong> - CVO, Директор по стратегическому планированию и развитию «M International», уроженец Монголии, ТОП-лидер международного уровня, миллионер с предпринимательской порядочностью.</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://gateway.pinata.cloud/ipfs/bafkreibhodo4zacfw4dzldnauog3smdklko42s2asukegwnyzenhyvsdbu" alt="Мачо Янг" class="w-full h-auto rounded mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Мачо Янг</h3>
+                    <p>Мачо Янг (Энххишиг Баярболд) — CVO и Директор по стратегическому развитию M International.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Бизнес-возможности -->
+    <section id="business" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Бизнес с M International</h2>
+            <p class="text-lg text-center mb-6">Присоединяйтесь к нашей команде и стройте свой бизнес с уникальным маркетинг-планом! Зарабатывайте через 9 видов вознаграждений и управляйте аккаунтами в личном кабинете.</p>
+            
+            <!-- Структура личного кабинета -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-center mb-4">Структура личного кабинета</h3>
+                <p class="text-center mb-4">При покупке пакетов Silver, Gold или Mobile создаются 3 аккаунта: главный (активный сразу) и два суб-аккаунта (активируются по желанию). Пакет Supreme автоматически активирует все 3 аккаунта на уровне Mobile.</p>
+            </div>
+
+            <!-- Пакеты -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-center mb-4">Пакеты</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold mb-2">Silver</h4>
+                        <p>120 CP / 80 BV 2 упаковки продукта</p>
+                        <p>Кешбек: 32 DP + 1 упаковка</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold mb-2">Gold</h4>
+                        <p>600 CP / 400 BV 11 упаковок продукта</p>
+                        <p>Кешбек: 160 DP + 7 упаковок</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold mb-2">Mobile</h4>
+                        <p>1200 CP / 800 BV 22 упаковки продукта</p>
+                        <p>Кешбек: 320 DP + 16 упаковок</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-lg font-semibold mb-2">Supreme</h4>
+                        <p>3600 CP / 2400 BV 66 упаковок продукта</p>
+                        <p>Кешбек: 960 DP + 48 упаковок</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вознаграждения -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-center mb-4">9 видов вознаграждения</h3>
+            </div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreifxz5y2lp2yngwttzdygrbouvzagt5kattezyrf53xigtm4xdy5hm" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Возвратный бонус (Кэшбэк)</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreieysvfz2mbjfup5esthpnkn373kdorvasu5fxb4ru6bcntegeqyfu" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Реферальный бонус для пакетов Silver, Gold.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreichyyywx3co7pix7thzmkg7mah2mnbxaynrndthq5zgo6kviarvse" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Реферальный бонус для пакетов Mobile, Supreme.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreiascfbditf7k6zb3imczagcmhy26h7yqx6rpm2flq7cj3ly2t6bty" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Реферальный бонус от 2 линии-5% от BV.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreiardxcrpztqxhj4qujsmrprxlipwt6fx7yz2vl3e6czqdknh3r5nu" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Переходный бонус.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreidj2xfq6ew75lomspfm34gcjwffzoql4n5d6ji622yrvbmfxzyy7i" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Бинарный бонус 10%.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreigcv7772ysk2v36kw3wb3j3nbja62awkhgahpo7zmdctouhvjmrm4" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Бонус активации (повторная покупка).</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreieb645wbbarhpjnnhnejhqcsie2plfqti3ryoonspiy5v7qam6ymq" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Бонус за статус.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreifo5aa3y6r2g2f4ak5g4mdy7szne3rwynn5qq555ff3algz37ne54" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Лидерский бонус.</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="https://gateway.pinata.cloud/ipfs/bafkreicmyqz7eoodn52pdffk2njri6oocpl56nwvdf3tlim6qiaulu2cx4" alt="Описание изображения" style="max-width: 100%; height: auto;">
+  <p>Бонус за воспитание лидера.</p>
+</div>
+
+            <!-- Кнопка "Стать партнером" с несколькими вариантами позиционирования -->
+            
+            <!-- Вариант 1: Дополнительный отступ через div -->
+            <div class="partner-button-container text-center">
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 partner-button-custom" style="margin-top: 80px !important; display: inline-block;">Стать партнером</a>
+            </div>
+            
+        </div>
+    </section>
+
+  <!-- Кнопка для перехода к разделу отзывов с плавной прокруткой -->
+<div class="text-center mt-8">
+    <button onclick="scrollToReviews()" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Посмотреть отзывы</button>
+</div>
+
+
+<section id="reviews" class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Отзывы наших партнёров</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="mb-2 italic">“Сначала я просто попробовала GreenMAX, потом не смогла отказаться. За 3 месяца – отличный результат по здоровью и + доход в команде!”</p>
+                <p class="text-right font-semibold">– Айгуль, г. Алматы</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="mb-2 italic">“Продукты реально работают, а маркетинг помогает быстро подняться. Я стал Сапфиром за 2 месяца!”</p>
+                <p class="text-right font-semibold">– Нурлан, г. Астана</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Контакты -->
+    <section id="contact" class="bg-gray-200 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Свяжитесь с нами</h2>
+            <div class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">Имя</label>
+                    <input type="text" id="name" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">Сообщение</label>
+                    <textarea id="message" class="w-full p-2 border rounded"></textarea>
+                </div>
+                <button type="button" onclick="alert('Форма отправлена!')" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Отправить</button>
+ <div class="flex justify-center space-x-4 mt-6">
+                <a
+                    href="mailto:bberdenova77@gmail.com"
+                    class="bg-gray-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800"
+                >
+                    написать нам на почту
+                </a>
+                <a
+                    href="https://wa.me/77758501213"
+                    target="_blank"
+                    class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600"
+                >
+                    WhatsApp
+                </a>
+                <a
+                    href="https://t.me/baxa021177"
+                    target="_blank"
+                    class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600"
+                >
+                    Telegram
+    </a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>© 2025 M International. Все права защищены.</p>
+    </footer>
+
+    <script>
+        async function connectWallet() {
+            if (window.ethereum) {
+                try {
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    const web3 = new Web3(window.ethereum);
+                    const accounts = await web3.eth.getAccounts();
+                    alert("Кошелек Polygon подключен: " + accounts[0]);
+                } catch (error) {
+                    console.error("Ошибка подключения:", error);
+                    alert("Не удалось подключить кошелек");
+                }
+            } else {
+                alert("MetaMask не установлен!");
+            }
+        }
+    </script>
+<script>
+    function scrollToReviews() {
+        document.getElementById("reviews").scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+</body>
+</html>
+
+
+    <script>
+        async function connectWallet() {
+            alert('Функционал подключения кошелька находится в разработке.');
+            // Здесь будет логика подключения кошелька Polygon
+            // if (window.ethereum) {
+            //     try {
+            //         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            //         const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+            //         if (chainId !== '0x89') { // 0x89 is the chain ID for Polygon Mainnet
+            //             alert('Пожалуйста, переключитесь на сеть Polygon Mainnet в вашем кошельке.');
+            //             // Optional: Request to switch network
+            //             // await window.ethereum.request({
+            //             //     method: 'wallet_switchEthereumChain',
+            //             //     params: [{ chainId: '0x89' }],
+            //             // });
+            //         } else {
+            //             console.log('Подключен аккаунт:', accounts[0]);
+            //             alert('Кошелек успешно подключен: ' + accounts[0]);
+            //         }
+            //     } catch (error) {
+            //         console.error('Ошибка подключения кошелька:', error);
+            //         alert('Ошибка подключения кошелька: ' + error.message);
+            //     }
+            // } else {
+            //     alert('MetaMask или другой Web3-совместимый кошелек не обнаружен.');
+            // }
+        }
+    </script>
+</body>
+</html>
+
